@@ -4,4 +4,10 @@ class Account {
         this.lastname = lastname;
         this.balance = balance
     }
+    getBalance(){
+        
+    }
+    withdraw(){
+        
+    }
 }
