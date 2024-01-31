@@ -5,9 +5,15 @@ class Account {
         this.balance = balance
     }
     getBalance(){
-        
+        return this.balance
     }
-    withdraw(){
-        
-    }
+   
 }
+
+const employee = new Account('Manoj', 'Adhikari', 2500);
+
+document.querySelector('#accountDetails').innerHTML = `
+  <p>Name: ${employee.firstname} ${employee.lastname}</p>
+  <p>Initial Balance: $${employee.getBalance()}</p>
+  
+`;
